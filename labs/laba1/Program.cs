@@ -29,11 +29,11 @@ public class Student
         string str = "";
         if (!string.IsNullOrEmpty(this._name))
         {
-            str = "Имя студента - " + this._name;
+            str = $"Имя студента - {this._name}";
         }
         if (this.Age.HasValue)
         {
-            str += ", возраст студента - " + this.Age;
+            str += $", возраст студента - {this.Age}";
         }
         Console.WriteLine(str);
     }
