@@ -1,4 +1,4 @@
-﻿Student Anna = new ("Anna");
+﻿Student Anna = new("Anna");
 Student Nikita = new("Nikita", 15);
 Nikita.WriteInfo();
 Nikita.BecameOlder();
@@ -8,15 +8,52 @@ Nikita.BecameOlder();
 Nikita.WriteInfo();
 Anna.WriteInfo();
 
+Student st = new("123");
+st.WriteInfo();
+st.Name = "Tratatat";
+st.WriteInfo();
+
 public class Student
 {
-    private string? _name { get; set; }
-    public int? Age { get; set; }
+    private string? _name;
+    public int? age;
 
-    public Student(string _name, int Age)
+    public string Name
+    {
+        get
+        {
+            if (string.IsNullOrEmpty(_name))
+            {
+                return "";
+            }
+            return _name;
+        }
+        set
+        {
+            _name = value;
+        }
+    }
+    public int Age
+    {
+        get
+        {
+            if (age.HasValue)
+            {
+                return (int)age;
+            }
+            return int.Parse("");
+            
+        }
+        set
+        {
+            age = value;
+        }
+    }
+
+    public Student(string _name, int age)
     {
         this._name = _name;
-        this.Age = Age;
+        this.age = age;
     }
 
     public Student(string _name)
@@ -31,15 +68,15 @@ public class Student
         {
             str = $"Имя студента - {this._name}";
         }
-        if (this.Age.HasValue)
+        if (this.age.HasValue)
         {
-            str += $", возраст студента - {this.Age}";
+            str += $", возраст студента - {this.age}";
         }
         Console.WriteLine(str);
     }
 
     public void BecameOlder()
     {
-        this.Age++;
+        this.age++;
     }
 }
