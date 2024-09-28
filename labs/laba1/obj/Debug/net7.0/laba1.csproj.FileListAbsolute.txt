@@ -12,3 +12,4 @@ D:\учёба какая-то\3 курс\С#\labs\laba1\obj\Debug\net7.0\refint\
 D:\учёба какая-то\3 курс\С#\labs\laba1\obj\Debug\net7.0\laba1.pdb
 D:\учёба какая-то\3 курс\С#\labs\laba1\obj\Debug\net7.0\laba1.genruntimeconfig.cache
 D:\учёба какая-то\3 курс\С#\labs\laba1\obj\Debug\net7.0\ref\laba1.dll
+D:\учёба какая-то\3 курс\С#\labs\laba1\obj\Debug\net7.0\laba1.sourcelink.json

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xNfDiMvZSl4cbMenfkbA/cuUacg0OUG3Vv22pnmGU2qbNva6xxksXVn1bZDHrNWssFz3C75dC+Xj+ukdcD4E5Q==",
+  "dgSpecHash": "D0IgBo95oJE=",
   "success": true,
   "projectFilePath": "D:\\учёба какая-то\\3 курс\\С#\\labs\\laba1\\laba1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kolov\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\kolov\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\kolov\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\kolov\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
