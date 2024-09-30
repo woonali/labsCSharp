@@ -13,7 +13,7 @@ do
         case 1:
             Console.Clear();
             string name = CheckInput.EnterName("Введите имя студента: ");
-            int age = CheckInput.EnterAge("Введите возраст студента: ");
+            int? age = CheckInput.EnterAge("Введите возраст студента: ");
             AddStudent(name, age);
             break;
         case 2:
@@ -111,10 +111,18 @@ do
 }
 while(choise != 7);
 
-void AddStudent(string name, int age)
+void AddStudent(string name, int? age)
 {
-    Student student = new Student(name, age);
-    students.Add(student);
+    if (age.HasValue)
+    {
+        Student student = new Student(name, age.Value);
+        students.Add(student);
+    }
+    else
+    {
+        Student student = new Student(name);
+        students.Add(student);
+    }
     Console.WriteLine("Новый студент добавлен");
 }
 
@@ -132,7 +140,7 @@ public class CheckInput
         return name;
     }
 
-    public static int EnterAge(string str)
+    public static int? EnterAge(string str)
     {
         string? age;
         int number;
@@ -140,6 +148,10 @@ public class CheckInput
         {
             Console.WriteLine(str);
             age = Console.ReadLine();
+            if (String.IsNullOrEmpty(age))
+            {
+                return null;
+            }
         }
         while (int.TryParse(age, out number) == false);
 
