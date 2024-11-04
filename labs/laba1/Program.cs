@@ -54,10 +54,13 @@ do
             break;
         case 4:
             Console.Clear();
-            students[i].BecameOlder();
-            Console.WriteLine("Студент стaл старше на один год!");
-            Console.WriteLine($"Было: {students[i].Age-1}");
-            Console.WriteLine($"Стало: {students[i].Age}");
+            if (i != -1)
+            {
+                students[i].BecameOlder();
+                Console.WriteLine("Студент стaл старше на один год!");
+                Console.WriteLine($"Было: {students[i].Age - 1}");
+                Console.WriteLine($"Стало: {students[i].Age}");
+            }
             break;
         case 5:
             Console.Clear();
@@ -142,19 +145,14 @@ public class CheckInput
 
     public static int? EnterAge(string str)
     {
-        string? age;
+        string? input;
         int number;
         do
         {
             Console.WriteLine(str);
-            age = Console.ReadLine();
-            if (String.IsNullOrEmpty(age))
-            {
-                return null;
-            }
+            input = Console.ReadLine();
         }
-        while (int.TryParse(age, out number) == false);
-
+        while (int.TryParse(input, out number) == false);
         return number;
     }
 }
