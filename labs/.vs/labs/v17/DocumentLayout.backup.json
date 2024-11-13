@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0421#\\labs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A47D87C4-F844-4131-A749-B34BA06C3445}|lab4\\lab4.csproj|d:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0441#\\labs\\lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A47D87C4-F844-4131-A749-B34BA06C3445}|lab4\\lab4.csproj|solutionrelative:lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4122D01-EA68-46B9-AD12-6109E5B1DA5C}|lab5\\lab5.csproj|d:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0441#\\labs\\lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4122D01-EA68-46B9-AD12-6109E5B1DA5C}|lab5\\lab5.csproj|solutionrelative:lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4BDDBA3-9662-4441-9EB9-35FDD5CFC4FD}|lab2\\lab2.csproj|d:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0441#\\labs\\lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4BDDBA3-9662-4441-9EB9-35FDD5CFC4FD}|lab2\\lab2.csproj|solutionrelative:lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 226,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +30,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0421#\\labs\\lab2\\Program.cs",
+              "RelativeDocumentMoniker": "lab2\\Program.cs",
+              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0421#\\labs\\lab2\\Program.cs",
+              "RelativeToolTip": "lab2\\Program.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T10:06:02.844Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0421#\\labs\\lab4\\Program.cs",
-              "RelativeDocumentMoniker": "lab4\\Program.cs",
-              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0421#\\labs\\lab4\\Program.cs*",
-              "RelativeToolTip": "lab4\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0421#\\labs\\lab5\\Program.cs",
+              "RelativeDocumentMoniker": "lab5\\Program.cs",
+              "ToolTip": "D:\\\u0443\u0447\u0451\u0431\u0430 \u043A\u0430\u043A\u0430\u044F-\u0442\u043E\\3 \u043A\u0443\u0440\u0441\\\u0421#\\labs\\lab5\\Program.cs",
+              "RelativeToolTip": "lab5\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:03:37.849Z",
+              "WhenOpened": "2024-11-05T11:48:33.906Z",
               "EditorCaption": ""
             }
           ]
