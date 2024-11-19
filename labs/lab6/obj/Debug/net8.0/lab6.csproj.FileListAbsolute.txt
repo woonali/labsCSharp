@@ -1,0 +1,15 @@
+D:\учёба какая-то\3 курс\С#\labs\lab6\bin\Debug\net8.0\lab6.exe
+D:\учёба какая-то\3 курс\С#\labs\lab6\bin\Debug\net8.0\lab6.deps.json
+D:\учёба какая-то\3 курс\С#\labs\lab6\bin\Debug\net8.0\lab6.runtimeconfig.json
+D:\учёба какая-то\3 курс\С#\labs\lab6\bin\Debug\net8.0\lab6.dll
+D:\учёба какая-то\3 курс\С#\labs\lab6\bin\Debug\net8.0\lab6.pdb
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.GeneratedMSBuildEditorConfig.editorconfig
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.AssemblyInfoInputs.cache
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.AssemblyInfo.cs
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.csproj.CoreCompileInputs.cache
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.sourcelink.json
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.dll
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\refint\lab6.dll
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.pdb
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\lab6.genruntimeconfig.cache
+D:\учёба какая-то\3 курс\С#\labs\lab6\obj\Debug\net8.0\ref\lab6.dll
