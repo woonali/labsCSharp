@@ -311,11 +311,6 @@ namespace lab7
         {
             NewDataSourceComboBox2();
         }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            
-        }
     }
 
 

@@ -367,7 +367,6 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            Resize += Form1_Resize;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
