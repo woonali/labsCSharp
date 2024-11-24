@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student recordBook="20221052">
+    <fullName>Колова Анастасия Владимировна</fullName>
+    <departmentId>0</departmentId>
+    <specificationId>1</specificationId>
+    <dateOfAdmission>01.09.2022</dateOfAdmission>
+    <group>131-ИБо</group>
+  </student>
+  <student recordBook="20223645">
+    <fullName>Логинов Никита Олегович</fullName>
+    <departmentId>2</departmentId>
+    <specificationId>6</specificationId>
+    <dateOfAdmission>06.10.2022</dateOfAdmission>
+    <group>831-ПО</group>
+  </student>
+  <student recordBook="20221678">
+    <fullName>Петров Александр Максимович</fullName>
+    <departmentId>1</departmentId>
+    <specificationId>3</specificationId>
+    <dateOfAdmission>03.09.2024</dateOfAdmission>
+    <group>311-ГЕо</group>
+  </student>
+</students>
