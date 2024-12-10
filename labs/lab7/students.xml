@@ -12,13 +12,6 @@
     <departmentId>2</departmentId>
     <specificationId>6</specificationId>
     <dateOfAdmission>06.10.2022</dateOfAdmission>
-    <group>831-ПО</group>
-  </student>
-  <student recordBook="20221678">
-    <fullName>Петров Александр Максимович</fullName>
-    <departmentId>1</departmentId>
-    <specificationId>3</specificationId>
-    <dateOfAdmission>03.09.2024</dateOfAdmission>
-    <group>311-ГЕо</group>
+    <group>831-ПДО</group>
   </student>
 </students>

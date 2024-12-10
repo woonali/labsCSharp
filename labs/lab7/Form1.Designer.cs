@@ -38,10 +38,10 @@
             dateOfAdmission = new DataGridViewTextBoxColumn();
             group = new DataGridViewTextBoxColumn();
             groupBox1 = new GroupBox();
+            maskedTextBox2 = new MaskedTextBox();
+            maskedTextBox1 = new MaskedTextBox();
             dateTimePicker1 = new DateTimePicker();
             comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
             comboBox2 = new ComboBox();
             textBox2 = new TextBox();
             label6 = new Label();
@@ -77,7 +77,6 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.Location = new Point(12, 12);
-            dataGridView1.MinimumSize = new Size(1310, 388);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
@@ -141,10 +140,10 @@
             // 
             groupBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            groupBox1.Controls.Add(maskedTextBox2);
+            groupBox1.Controls.Add(maskedTextBox1);
             groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(comboBox2);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label6);
@@ -161,6 +160,28 @@
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Информация";
+            // 
+            // maskedTextBox2
+            // 
+            maskedTextBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            maskedTextBox2.BeepOnError = true;
+            maskedTextBox2.Location = new Point(875, 213);
+            maskedTextBox2.Mask = "000-LLL";
+            maskedTextBox2.Name = "maskedTextBox2";
+            maskedTextBox2.Size = new Size(205, 30);
+            maskedTextBox2.TabIndex = 14;
+            maskedTextBox2.Click += maskedTextBox2_Click;
+            // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            maskedTextBox1.BeepOnError = true;
+            maskedTextBox1.Location = new Point(35, 99);
+            maskedTextBox1.Mask = "00000000";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(392, 30);
+            maskedTextBox1.TabIndex = 13;
+            maskedTextBox1.Click += maskedTextBox1_Click;
             // 
             // dateTimePicker1
             // 
@@ -187,27 +208,6 @@
             comboBox1.Size = new Size(366, 31);
             comboBox1.TabIndex = 7;
             comboBox1.SelectionChangeCommitted += comboBox1_SelectionChangeCommitted;
-            // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox1.Font = new Font("Segoe UI", 10.2F);
-            textBox1.Location = new Point(35, 96);
-            textBox1.Margin = new Padding(3, 3, 35, 3);
-            textBox1.MinimumSize = new Size(392, 30);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(392, 30);
-            textBox1.TabIndex = 10;
-            // 
-            // textBox3
-            // 
-            textBox3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox3.Font = new Font("Segoe UI", 10.2F);
-            textBox3.Location = new Point(875, 212);
-            textBox3.MinimumSize = new Size(205, 30);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(205, 30);
-            textBox3.TabIndex = 12;
             // 
             // comboBox2
             // 
@@ -304,12 +304,10 @@
             // groupBox2
             // 
             groupBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            groupBox2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             groupBox2.Controls.Add(button3);
             groupBox2.Controls.Add(button2);
             groupBox2.Controls.Add(button1);
             groupBox2.Location = new Point(1137, 406);
-            groupBox2.MinimumSize = new Size(185, 300);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(185, 300);
             groupBox2.TabIndex = 0;
@@ -318,12 +316,11 @@
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button3.BackColor = Color.RosyBrown;
-            button3.Location = new Point(6, 202);
-            button3.MinimumSize = new Size(173, 80);
+            button3.Location = new Point(6, 196);
             button3.Name = "button3";
-            button3.Size = new Size(173, 80);
+            button3.Size = new Size(173, 70);
             button3.TabIndex = 2;
             button3.Text = "Удалить";
             button3.UseVisualStyleBackColor = false;
@@ -331,12 +328,11 @@
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button2.BackColor = Color.RosyBrown;
-            button2.Location = new Point(6, 116);
-            button2.MinimumSize = new Size(173, 80);
+            button2.Location = new Point(6, 120);
             button2.Name = "button2";
-            button2.Size = new Size(173, 80);
+            button2.Size = new Size(173, 70);
             button2.TabIndex = 1;
             button2.Text = "Изменить";
             button2.UseVisualStyleBackColor = false;
@@ -344,12 +340,12 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.Anchor = AnchorStyles.None;
+            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             button1.BackColor = Color.RosyBrown;
-            button1.Location = new Point(6, 30);
-            button1.MinimumSize = new Size(173, 80);
+            button1.Location = new Point(6, 43);
             button1.Name = "button1";
-            button1.Size = new Size(173, 80);
+            button1.Size = new Size(173, 70);
             button1.TabIndex = 0;
             button1.Text = "Добавить";
             button1.UseVisualStyleBackColor = false;
@@ -362,8 +358,8 @@
             BackColor = Color.MistyRose;
             ClientSize = new Size(1334, 706);
             Controls.Add(groupBox1);
-            Controls.Add(dataGridView1);
             Controls.Add(groupBox2);
+            Controls.Add(dataGridView1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -379,9 +375,7 @@
         private DataGridView dataGridView1;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private TextBox textBox3;
         private TextBox textBox2;
-        private TextBox textBox1;
         private DateTimePicker dateTimePicker1;
         private ComboBox comboBox2;
         private ComboBox comboBox1;
@@ -400,5 +394,7 @@
         private DataGridViewTextBoxColumn specification;
         private DataGridViewTextBoxColumn dateOfAdmission;
         private DataGridViewTextBoxColumn group;
+        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox maskedTextBox2;
     }
 }

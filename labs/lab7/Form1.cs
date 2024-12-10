@@ -102,8 +102,8 @@ namespace lab7
 
         private void AddStudent()
         {
-            if (textBox1.Text == null || textBox2.Text == null && comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1
-                || dateTimePicker1.Text == null || textBox1 == null)
+            if (maskedTextBox1.Text == null || textBox2.Text == null && comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1
+                || dateTimePicker1.Text == null || maskedTextBox1 == null)
             {
                 MessageBox.Show("Заполните все поля");
                 return;
@@ -112,8 +112,8 @@ namespace lab7
 
             if (flag)
             {
-                Student newStudent = new Student(textBox1.Text, textBox2.Text, (Department?)comboBox1.SelectedItem,
-                (Specification?)comboBox2.SelectedItem, dateTimePicker1.Value.Date.ToString("dd.MM.yyyy"), textBox3.Text);
+                Student newStudent = new Student(maskedTextBox1.Text, textBox2.Text, (Department?)comboBox1.SelectedItem,
+                (Specification?)comboBox2.SelectedItem, dateTimePicker1.Value.Date.ToString("dd.MM.yyyy"), maskedTextBox2.Text);
 
                 XDocument doc = XDocument.Load(pathToXml);
                 XElement? students = doc.Element("students");
@@ -157,7 +157,7 @@ namespace lab7
                 var recordBook = selectedStudent.Attribute("recordBook");
                 if (recordBook != null)
                 {
-                    recordBook.Value = textBox1.Text;
+                    recordBook.Value = maskedTextBox1.Text;
                 }
 
                 var fullName = selectedStudent.Element("fullName");
@@ -187,7 +187,7 @@ namespace lab7
                 var group = selectedStudent.Element("group");
                 if (group != null)
                 {
-                    group.Value = textBox3.Text;
+                    group.Value = maskedTextBox2.Text;
                 }
             }
 
@@ -223,7 +223,7 @@ namespace lab7
 
         private bool CheckValidating()
         {
-            string checkRecordBook = textBox1.Text;
+            string checkRecordBook = maskedTextBox1.Text;
 
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
@@ -242,17 +242,17 @@ namespace lab7
 
         private void ClearInfo()
         {
-            textBox1.Text = string.Empty;
+            maskedTextBox1.Text = string.Empty;
             textBox2.Text = string.Empty;
             comboBox1.SelectedIndex = -1;
             comboBox2.SelectedIndex = -1;
             dateTimePicker1.Text = DateTime.Now.ToString();
-            textBox3.Text = string.Empty;
+            maskedTextBox2.Text = string.Empty;
         }
 
         private void SelectRow()
         {
-            textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            maskedTextBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             var dataSource1 = comboBox1.DataSource as List<Department>;
             if (dataSource1 != null)
@@ -268,7 +268,7 @@ namespace lab7
                 comboBox2.SelectedItem = Item2;
             }
             dateTimePicker1.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            textBox3.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            maskedTextBox2.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
         }
 
         private void NewDataSourceComboBox2()
@@ -310,6 +310,16 @@ namespace lab7
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
             NewDataSourceComboBox2();
+        }
+
+        private void maskedTextBox1_Click(object sender, EventArgs e)
+        {
+            maskedTextBox1.SelectAll();
+        }
+
+        private void maskedTextBox2_Click(object sender, EventArgs e)
+        {
+            maskedTextBox2.SelectAll();
         }
     }
 
