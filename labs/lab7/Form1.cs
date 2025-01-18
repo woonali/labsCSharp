@@ -103,7 +103,7 @@ namespace lab7
         private void AddStudent()
         {
             if (maskedTextBox1.Text == null || textBox2.Text == null && comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1
-                || dateTimePicker1.Text == null || maskedTextBox1 == null)
+                || dateTimePicker1.Text == null || maskedTextBox2.Text == null)
             {
                 MessageBox.Show("Заполните все поля");
                 return;
